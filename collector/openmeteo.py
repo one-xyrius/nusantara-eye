@@ -1,32 +1,29 @@
-"""Collector Open-Meteo: darat, udara, laut. Tanpa API key.
+"""Collector Open-Meteo: darat, udara, laut. Tanpa API key. v0.2.1
 
-Perbaikan v0.2:
-- Laut pakai titik perairan terpisah (param `coord`), bukan koordinat ibukota.
-- Hujan & suhu harian pakai `daily` (precipitation_sum, temperature_2m_max/min)
-  supaya tidak 0.0 seperti hourly per-jam.
+Catatan penting:
+- Air quality endpoint TIDAK mendukung `daily` (hanya `hourly`).  Menggunakan `daily`
+  pada endpoint ini menghasilkan HTTP 400 "Invalid value".  Jadi layer `air` hanya
+  mengambil data hourly (24 jam ke belakang + forecast).
+- `daily` hanya berlaku untuk layer darat (forecast endpoint Open-Meteo biasa).
+- `marine` endpoint juga tidak punya `daily`.
 """
 import json
 import urllib.parse
 import urllib.request
 
 TIMEOUT = 20
-UA = "nusantara-eye/0.2 (portfolio project; contact: one-xyrius)"
+UA = "nusantara-eye/0.2.1 (portfolio project; contact: one-xyrius)"
 
 ENDPOINTS = {
     "land": "https://api.open-meteo.com/v1/forecast",
-    "air": "https://air-quality-api.open-meteo.com/v1/air-quality",
-    "sea": "https://marine-api.open-meteo.com/v1/marine",
+    "air":  "https://air-quality-api.open-meteo.com/v1/air-quality",
+    "sea":  "https://marine-api.open-meteo.com/v1/marine",
 }
-LAND_HOURLY = "soil_moisture_0_to_1cm,soil_moisture_3_to_9cm,soil_temperature_0cm,temperature_2m,relative_humidity_2m,precipitation"
-AIR_HOURLY = "pm10,pm2_5,nitrogen_dioxide,aerosol_optical_depth"
-SEA_HOURLY = "wave_height,sea_surface_temperature,ocean_current_velocity"
-HOURLY = {"land": LAND_HOURLY, "air": AIR_HOURLY, "sea": SEA_HOURLY}
-
-DAILY = {
-    "land": "precipitation_sum,temperature_2m_max,temperature_2m_min",
-    "air": "pm10_max,pm2_5_max",
-    "sea": "wave_height_max",
-}
+LAND_HOURLY  = "soil_moisture_0_to_1cm,soil_moisture_3_to_9cm,soil_temperature_0cm,temperature_2m,relative_humidity_2m,precipitation"
+AIR_HOURLY   = "pm10,pm2_5,nitrogen_dioxide,aerosol_optical_depth"
+SEA_HOURLY   = "wave_height,sea_surface_temperature,ocean_current_velocity"
+HOURLY       = {"land": LAND_HOURLY, "air": AIR_HOURLY, "sea": SEA_HOURLY}
+DAILY        = {"land": "precipitation_sum,temperature_2m_max,temperature_2m_min"}
 
 
 def _fetch(url, params):
@@ -36,7 +33,7 @@ def _fetch(url, params):
         return json.loads(r.read().decode())
 
 
-def _tail_block(block, n, key="time"):
+def _tail(block, n, key="time"):
     if not block or key not in block:
         return {}
     times = block[key]
@@ -64,16 +61,19 @@ def fetch(layer, lat, lon, days=3):
     if layer in DAILY:
         params["daily"] = DAILY[layer]
     raw = _fetch(ENDPOINTS[layer], params)
-    hourly = _tail_block(raw.get("hourly", {}), n=24)
+    hourly = _tail(raw.get("hourly", {}), n=24)
     hunits = raw.get("hourly_units") or {}
     for k, v in hourly.items():
         v["unit"] = hunits.get(k)
-    daily = _tail_block(raw.get("daily", {}), n=7, key="time")
-    dunits = raw.get("daily_units") or {}
-    for k, v in daily.items():
-        v["unit"] = dunits.get(k)
+    daily = {}
+    if layer in DAILY:
+        daily = _tail(raw.get("daily", {}), n=7, key="time")
+        dunits = raw.get("daily_units") or {}
+        for k, v in daily.items():
+            v["unit"] = dunits.get(k)
     return {
-        "layer": layer, "lat": raw.get("latitude"), "lon": raw.get("longitude"),
+        "layer": layer,
+        "lat": raw.get("latitude"), "lon": raw.get("longitude"),
         "elevation": raw.get("elevation"), "timezone": raw.get("timezone"),
         "hourly": hourly, "daily": daily,
     }

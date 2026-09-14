@@ -1,40 +1,458 @@
 [
-  {"code":"11","name":"Aceh","capital":"Banda Aceh","lat":5.5483,"lon":95.3238,"sea":{"name":"Samudra Hindia (barat Aceh)","lat":5.20,"lon":94.60}},
-  {"code":"12","name":"Sumatera Utara","capital":"Medan","lat":3.5952,"lon":98.6722,"sea":{"name":"Selat Malaka","lat":3.90,"lon":98.80}},
-  {"code":"13","name":"Sumatera Barat","capital":"Padang","lat":-0.9471,"lon":100.4172,"sea":{"name":"Samudra Hindia (barat Padang)","lat":-1.20,"lon":99.90}},
-  {"code":"14","name":"Riau","capital":"Pekanbaru","lat":0.5071,"lon":101.4478,"sea":{"name":"Selat Malaka (pantai Dumai)","lat":1.75,"lon":101.60}},
-  {"code":"15","name":"Jambi","capital":"Jambi","lat":-1.6101,"lon":103.6131,"sea":{"name":"Selat Berhala / Laut Natuna","lat":-1.10,"lon":104.60}},
-  {"code":"16","name":"Sumatera Selatan","capital":"Palembang","lat":-2.9761,"lon":104.7754,"sea":{"name":"Selat Bangka (pantai Sungsang)","lat":-2.30,"lon":104.90}},
-  {"code":"17","name":"Bengkulu","capital":"Bengkulu","lat":-3.8004,"lon":102.2655,"sea":{"name":"Samudra Hindia (barat Bengkulu)","lat":-4.00,"lon":101.90}},
-  {"code":"18","name":"Lampung","capital":"Bandar Lampung","lat":-5.3971,"lon":105.2668,"sea":{"name":"Selat Sunda (Teluk Lampung)","lat":-5.80,"lon":105.20}},
-  {"code":"19","name":"Kepulauan Bangka Belitung","capital":"Pangkal Pinang","lat":-2.1291,"lon":106.1137,"sea":{"name":"Laut Natuna (timur Bangka)","lat":-2.00,"lon":106.80}},
-  {"code":"21","name":"Kepulauan Riau","capital":"Tanjungpinang","lat":0.9186,"lon":104.4665,"sea":{"name":"Laut Natuna (timur Bintan)","lat":1.00,"lon":105.30}},
-  {"code":"31","name":"DKI Jakarta","capital":"Jakarta","lat":-6.2088,"lon":106.8456,"sea":{"name":"Teluk Jakarta","lat":-6.05,"lon":106.85}},
-  {"code":"32","name":"Jawa Barat","capital":"Bandung","lat":-6.9175,"lon":107.6191,"sea":{"name":"Samudra Hindia (selatan Pelabuhanratu)","lat":-7.20,"lon":106.40}},
-  {"code":"33","name":"Jawa Tengah","capital":"Semarang","lat":-6.9932,"lon":110.4203,"sea":{"name":"Laut Jawa (utara Semarang)","lat":-6.60,"lon":110.40}},
-  {"code":"34","name":"Daerah Istimewa Yogyakarta","capital":"Yogyakarta","lat":-7.7956,"lon":110.3695,"sea":{"name":"Samudra Hindia (selatan Parangtritis)","lat":-8.20,"lon":110.30}},
-  {"code":"35","name":"Jawa Timur","capital":"Surabaya","lat":-7.2575,"lon":112.7521,"sea":{"name":"Selat Madura","lat":-7.10,"lon":112.90}},
-  {"code":"36","name":"Banten","capital":"Serang","lat":-6.1104,"lon":106.1503,"sea":{"name":"Selat Sunda (barat Merak)","lat":-6.00,"lon":105.80}},
-  {"code":"51","name":"Bali","capital":"Denpasar","lat":-8.6500,"lon":115.2167,"sea":{"name":"Selat Badung / Samudra Hindia","lat":-8.90,"lon":115.20}},
-  {"code":"52","name":"Nusa Tenggara Barat","capital":"Mataram","lat":-8.5833,"lon":116.1167,"sea":{"name":"Selat Lombok","lat":-8.50,"lon":115.90}},
-  {"code":"53","name":"Nusa Tenggara Timur","capital":"Kupang","lat":-10.1772,"lon":123.6070,"sea":{"name":"Laut Sawu / Selat Semau","lat":-10.30,"lon":123.30}},
-  {"code":"61","name":"Kalimantan Barat","capital":"Pontianak","lat":-0.0263,"lon":109.3425,"sea":{"name":"Laut Natuna (barat Kalimantan)","lat":-0.50,"lon":108.50}},
-  {"code":"62","name":"Kalimantan Tengah","capital":"Palangka Raya","lat":-2.2080,"lon":113.9165,"sea":{"name":"Laut Jawa (selatan Sampit)","lat":-3.20,"lon":112.90}},
-  {"code":"63","name":"Kalimantan Selatan","capital":"Banjarmasin","lat":-3.3186,"lon":114.5944,"sea":{"name":"Selat Makassar (timur Banjarmasin)","lat":-3.80,"lon":115.50}},
-  {"code":"64","name":"Kalimantan Timur","capital":"Samarinda","lat":-0.5017,"lon":117.1536,"sea":{"name":"Selat Makassar (timur Balikpapan)","lat":-1.50,"lon":117.50}},
-  {"code":"65","name":"Kalimantan Utara","capital":"Tanjung Selor","lat":2.8375,"lon":117.3667,"sea":{"name":"Laut Sulawesi (timur Tarakan)","lat":3.40,"lon":118.00}},
-  {"code":"71","name":"Sulawesi Utara","capital":"Manado","lat":1.4748,"lon":124.8421,"sea":{"name":"Laut Sulawesi / Selat Lembeh","lat":1.60,"lon":125.20}},
-  {"code":"72","name":"Sulawesi Tengah","capital":"Palu","lat":-0.8917,"lon":119.8707,"sea":{"name":"Selat Makassar (barat Palu)","lat":-0.70,"lon":119.30}},
-  {"code":"73","name":"Sulawesi Selatan","capital":"Makassar","lat":-5.1477,"lon":119.4327,"sea":{"name":"Selat Makassar (barat Makassar)","lat":-5.10,"lon":119.00}},
-  {"code":"74","name":"Sulawesi Tenggara","capital":"Kendari","lat":-3.9450,"lon":122.4989,"sea":{"name":"Teluk Kendari / Laut Banda","lat":-4.00,"lon":122.70}},
-  {"code":"75","name":"Gorontalo","capital":"Gorontalo","lat":0.5435,"lon":123.0568,"sea":{"name":"Teluk Tomini","lat":0.40,"lon":122.50}},
-  {"code":"76","name":"Sulawesi Barat","capital":"Mamuju","lat":-2.6748,"lon":118.8885,"sea":{"name":"Selat Makassar (barat Mamuju)","lat":-2.60,"lon":118.60}},
-  {"code":"81","name":"Maluku","capital":"Ambon","lat":-3.6954,"lon":128.1814,"sea":{"name":"Teluk Ambon / Laut Banda","lat":-3.70,"lon":128.10}},
-  {"code":"82","name":"Maluku Utara","capital":"Sofifi","lat":0.7372,"lon":127.5774,"sea":{"name":"Laut Halmahera","lat":0.70,"lon":127.90}},
-  {"code":"91","name":"Papua","capital":"Jayapura","lat":-2.5916,"lon":140.6690,"sea":{"name":"Laut Bismarck (utara Jayapura)","lat":-2.20,"lon":140.80}},
-  {"code":"92","name":"Papua Barat","capital":"Manokwari","lat":-0.8615,"lon":134.0620,"sea":{"name":"Teluk Cenderawasih","lat":-0.90,"lon":134.20}},
-  {"code":"93","name":"Papua Selatan","capital":"Merauke","lat":-8.4932,"lon":140.4018,"sea":{"name":"Laut Arafura (selatan Merauke)","lat":-8.70,"lon":140.20}},
-  {"code":"94","name":"Papua Tengah","capital":"Nabire","lat":-3.3500,"lon":135.4850,"sea":{"name":"Teluk Cenderawasih (timur Nabire)","lat":-3.20,"lon":135.60}},
-  {"code":"95","name":"Papua Pegunungan","capital":"Wamena","lat":-4.0996,"lon":138.9470,"sea":{"name":"Laut Arafura (selatan Mimika)","lat":-4.90,"lon":137.00}},
-  {"code":"96","name":"Papua Barat Daya","capital":"Sorong","lat":-0.8762,"lon":131.2558,"sea":{"name":"Selat Sele / Laut Seram","lat":-1.00,"lon":130.80}}
+  {
+    "code": "11",
+    "name": "Aceh",
+    "capital": "Banda Aceh",
+    "lat": 5.5483,
+    "lon": 95.3238,
+    "sea": {
+      "name": "Samudra Hindia (barat Aceh)",
+      "lat": 5.2,
+      "lon": 94.6
+    }
+  },
+  {
+    "code": "12",
+    "name": "Sumatera Utara",
+    "capital": "Medan",
+    "lat": 3.5952,
+    "lon": 98.6722,
+    "sea": {
+      "name": "Selat Malaka",
+      "lat": 3.9,
+      "lon": 98.8
+    }
+  },
+  {
+    "code": "13",
+    "name": "Sumatera Barat",
+    "capital": "Padang",
+    "lat": -0.9471,
+    "lon": 100.4172,
+    "sea": {
+      "name": "Samudra Hindia (barat Padang)",
+      "lat": -1.2,
+      "lon": 99.9
+    }
+  },
+  {
+    "code": "14",
+    "name": "Riau",
+    "capital": "Pekanbaru",
+    "lat": 0.5071,
+    "lon": 101.4478,
+    "sea": {
+      "name": "Selat Malaka (utara Dumai)",
+      "lat": 2.3,
+      "lon": 101.2
+    }
+  },
+  {
+    "code": "15",
+    "name": "Jambi",
+    "capital": "Jambi",
+    "lat": -1.6101,
+    "lon": 103.6131,
+    "sea": {
+      "name": "Selat Berhala / Laut Natuna",
+      "lat": -1.1,
+      "lon": 104.6
+    }
+  },
+  {
+    "code": "16",
+    "name": "Sumatera Selatan",
+    "capital": "Palembang",
+    "lat": -2.9761,
+    "lon": 104.7754,
+    "sea": {
+      "name": "Selat Bangka (pantai Sungsang)",
+      "lat": -2.3,
+      "lon": 104.9
+    }
+  },
+  {
+    "code": "17",
+    "name": "Bengkulu",
+    "capital": "Bengkulu",
+    "lat": -3.8004,
+    "lon": 102.2655,
+    "sea": {
+      "name": "Samudra Hindia (barat Bengkulu)",
+      "lat": -4.0,
+      "lon": 101.9
+    }
+  },
+  {
+    "code": "18",
+    "name": "Lampung",
+    "capital": "Bandar Lampung",
+    "lat": -5.3971,
+    "lon": 105.2668,
+    "sea": {
+      "name": "Selat Sunda (Teluk Lampung)",
+      "lat": -5.8,
+      "lon": 105.2
+    }
+  },
+  {
+    "code": "19",
+    "name": "Kepulauan Bangka Belitung",
+    "capital": "Pangkal Pinang",
+    "lat": -2.1291,
+    "lon": 106.1137,
+    "sea": {
+      "name": "Laut Natuna (timur Bangka)",
+      "lat": -1.6,
+      "lon": 107.2
+    }
+  },
+  {
+    "code": "21",
+    "name": "Kepulauan Riau",
+    "capital": "Tanjungpinang",
+    "lat": 0.9186,
+    "lon": 104.4665,
+    "sea": {
+      "name": "Laut Natuna (timur Bintan)",
+      "lat": 1.2,
+      "lon": 105.6
+    }
+  },
+  {
+    "code": "31",
+    "name": "DKI Jakarta",
+    "capital": "Jakarta",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "sea": {
+      "name": "Teluk Jakarta",
+      "lat": -6.05,
+      "lon": 106.85
+    }
+  },
+  {
+    "code": "32",
+    "name": "Jawa Barat",
+    "capital": "Bandung",
+    "lat": -6.9175,
+    "lon": 107.6191,
+    "sea": {
+      "name": "Samudra Hindia (selatan Pelabuhanratu)",
+      "lat": -7.2,
+      "lon": 106.4
+    }
+  },
+  {
+    "code": "33",
+    "name": "Jawa Tengah",
+    "capital": "Semarang",
+    "lat": -6.9932,
+    "lon": 110.4203,
+    "sea": {
+      "name": "Laut Jawa (utara Semarang)",
+      "lat": -6.6,
+      "lon": 110.4
+    }
+  },
+  {
+    "code": "34",
+    "name": "Daerah Istimewa Yogyakarta",
+    "capital": "Yogyakarta",
+    "lat": -7.7956,
+    "lon": 110.3695,
+    "sea": {
+      "name": "Samudra Hindia (selatan Parangtritis)",
+      "lat": -8.2,
+      "lon": 110.3
+    }
+  },
+  {
+    "code": "35",
+    "name": "Jawa Timur",
+    "capital": "Surabaya",
+    "lat": -7.2575,
+    "lon": 112.7521,
+    "sea": {
+      "name": "Selat Madura",
+      "lat": -7.1,
+      "lon": 112.9
+    }
+  },
+  {
+    "code": "36",
+    "name": "Banten",
+    "capital": "Serang",
+    "lat": -6.1104,
+    "lon": 106.1503,
+    "sea": {
+      "name": "Selat Sunda (barat Merak)",
+      "lat": -6.0,
+      "lon": 105.8
+    }
+  },
+  {
+    "code": "51",
+    "name": "Bali",
+    "capital": "Denpasar",
+    "lat": -8.65,
+    "lon": 115.2167,
+    "sea": {
+      "name": "Selat Badung / Samudra Hindia",
+      "lat": -8.9,
+      "lon": 115.2
+    }
+  },
+  {
+    "code": "52",
+    "name": "Nusa Tenggara Barat",
+    "capital": "Mataram",
+    "lat": -8.5833,
+    "lon": 116.1167,
+    "sea": {
+      "name": "Selat Lombok",
+      "lat": -8.5,
+      "lon": 115.9
+    }
+  },
+  {
+    "code": "53",
+    "name": "Nusa Tenggara Timur",
+    "capital": "Kupang",
+    "lat": -10.1772,
+    "lon": 123.607,
+    "sea": {
+      "name": "Laut Sawu / Selat Semau",
+      "lat": -10.3,
+      "lon": 123.3
+    }
+  },
+  {
+    "code": "61",
+    "name": "Kalimantan Barat",
+    "capital": "Pontianak",
+    "lat": -0.0263,
+    "lon": 109.3425,
+    "sea": {
+      "name": "Laut Natuna (barat Kalimantan)",
+      "lat": -0.5,
+      "lon": 108.5
+    }
+  },
+  {
+    "code": "62",
+    "name": "Kalimantan Tengah",
+    "capital": "Palangka Raya",
+    "lat": -2.208,
+    "lon": 113.9165,
+    "sea": {
+      "name": "Laut Jawa (selatan Sampit)",
+      "lat": -3.2,
+      "lon": 112.9
+    }
+  },
+  {
+    "code": "63",
+    "name": "Kalimantan Selatan",
+    "capital": "Banjarmasin",
+    "lat": -3.3186,
+    "lon": 114.5944,
+    "sea": {
+      "name": "Selat Makassar (timur Banjarmasin)",
+      "lat": -3.8,
+      "lon": 115.5
+    }
+  },
+  {
+    "code": "64",
+    "name": "Kalimantan Timur",
+    "capital": "Samarinda",
+    "lat": -0.5017,
+    "lon": 117.1536,
+    "sea": {
+      "name": "Selat Makassar (timur Balikpapan)",
+      "lat": -1.5,
+      "lon": 117.5
+    }
+  },
+  {
+    "code": "65",
+    "name": "Kalimantan Utara",
+    "capital": "Tanjung Selor",
+    "lat": 2.8375,
+    "lon": 117.3667,
+    "sea": {
+      "name": "Laut Sulawesi (timur Tarakan)",
+      "lat": 3.4,
+      "lon": 118.0
+    }
+  },
+  {
+    "code": "71",
+    "name": "Sulawesi Utara",
+    "capital": "Manado",
+    "lat": 1.4748,
+    "lon": 124.8421,
+    "sea": {
+      "name": "Laut Sulawesi / Selat Lembeh",
+      "lat": 1.6,
+      "lon": 125.2
+    }
+  },
+  {
+    "code": "72",
+    "name": "Sulawesi Tengah",
+    "capital": "Palu",
+    "lat": -0.8917,
+    "lon": 119.8707,
+    "sea": {
+      "name": "Selat Makassar (barat Palu)",
+      "lat": -0.7,
+      "lon": 119.3
+    }
+  },
+  {
+    "code": "73",
+    "name": "Sulawesi Selatan",
+    "capital": "Makassar",
+    "lat": -5.1477,
+    "lon": 119.4327,
+    "sea": {
+      "name": "Selat Makassar (barat Makassar)",
+      "lat": -5.1,
+      "lon": 119.0
+    }
+  },
+  {
+    "code": "74",
+    "name": "Sulawesi Tenggara",
+    "capital": "Kendari",
+    "lat": -3.945,
+    "lon": 122.4989,
+    "sea": {
+      "name": "Teluk Kendari / Laut Banda",
+      "lat": -4.0,
+      "lon": 122.7
+    }
+  },
+  {
+    "code": "75",
+    "name": "Gorontalo",
+    "capital": "Gorontalo",
+    "lat": 0.5435,
+    "lon": 123.0568,
+    "sea": {
+      "name": "Teluk Tomini",
+      "lat": 0.4,
+      "lon": 122.5
+    }
+  },
+  {
+    "code": "76",
+    "name": "Sulawesi Barat",
+    "capital": "Mamuju",
+    "lat": -2.6748,
+    "lon": 118.8885,
+    "sea": {
+      "name": "Selat Makassar (barat Mamuju)",
+      "lat": -2.6,
+      "lon": 118.6
+    }
+  },
+  {
+    "code": "81",
+    "name": "Maluku",
+    "capital": "Ambon",
+    "lat": -3.6954,
+    "lon": 128.1814,
+    "sea": {
+      "name": "Teluk Ambon / Laut Banda",
+      "lat": -3.7,
+      "lon": 128.1
+    }
+  },
+  {
+    "code": "82",
+    "name": "Maluku Utara",
+    "capital": "Sofifi",
+    "lat": 0.7372,
+    "lon": 127.5774,
+    "sea": {
+      "name": "Laut Halmahera",
+      "lat": 0.7,
+      "lon": 127.9
+    }
+  },
+  {
+    "code": "91",
+    "name": "Papua",
+    "capital": "Jayapura",
+    "lat": -2.5916,
+    "lon": 140.669,
+    "sea": {
+      "name": "Laut Bismarck (utara Jayapura)",
+      "lat": -2.2,
+      "lon": 140.8
+    }
+  },
+  {
+    "code": "92",
+    "name": "Papua Barat",
+    "capital": "Manokwari",
+    "lat": -0.8615,
+    "lon": 134.062,
+    "sea": {
+      "name": "Teluk Cenderawasih",
+      "lat": -0.9,
+      "lon": 134.2
+    }
+  },
+  {
+    "code": "93",
+    "name": "Papua Selatan",
+    "capital": "Merauke",
+    "lat": -8.4932,
+    "lon": 140.4018,
+    "sea": {
+      "name": "Laut Arafura (selatan Merauke)",
+      "lat": -8.7,
+      "lon": 140.2
+    }
+  },
+  {
+    "code": "94",
+    "name": "Papua Tengah",
+    "capital": "Nabire",
+    "lat": -3.35,
+    "lon": 135.485,
+    "sea": {
+      "name": "Teluk Cenderawasih (timur Nabire)",
+      "lat": -3.2,
+      "lon": 135.6
+    }
+  },
+  {
+    "code": "95",
+    "name": "Papua Pegunungan",
+    "capital": "Wamena",
+    "lat": -4.0996,
+    "lon": 138.947,
+    "sea": {
+      "name": "Laut Arafura (selatan Mimika)",
+      "lat": -4.9,
+      "lon": 137.0
+    }
+  },
+  {
+    "code": "96",
+    "name": "Papua Barat Daya",
+    "capital": "Sorong",
+    "lat": -0.8762,
+    "lon": 131.2558,
+    "sea": {
+      "name": "Selat Sele / Laut Seram",
+      "lat": -1.0,
+      "lon": 130.8
+    }
+  }
 ]
