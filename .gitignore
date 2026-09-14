@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+data/cache.db
+data/provinces.raw.json
+.venv/
+node_modules/
